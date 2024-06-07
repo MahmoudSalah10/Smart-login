@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== Website Icon ========== -->
+    <link rel="icon" href="images/user-interface.png">
+    <title>Register page</title>
+    <!-- ========== Bootstrap CSS link ========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ========== CSS external link ========== -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="row text-center w-75 mx-auto p-4 mt-5 form">
+                <h1 class="login-header">Registeration Form</h1>
+                <div id="registerForm" class="p-4" autocomplete="off">
+                    <input id="signupName" class="form-control my-3" placeholder="Enter your name" type="text" required>
+                    <input id="signupEmail" class="form-control my-2" placeholder="Enter your email" type="text"
+                        required>
+                    <input id="signupPassword" class="form-control my-3" placeholder="Enter your password"
+                        type="password" required>
+                    <button type="submit" class="btn btn-outline-info w-100 my-2" id="signupBtn">Sign Up</button>
+                </div>
+                <p class="text-white">you have an account? <span class="span-login"><a id="loginAnchor"
+                class="text-white text-decoration-none" >Sign in</a></span></p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========== Bootstrap JS link ========== -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ========== alert JS link ========== -->
+    <script src="js/sweetalert.min.js"></script>
+    <!-- ==========  JS external link ========== -->
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== Website Icon ========== -->
+    <link rel="icon" href="images/user-interface.png">
+    <!-- ========== Website Title ========== -->
+    <title>login page</title>
+    <!-- ========== Bootstrap CSS link ========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ========== CSS external link ========== -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="row text-center w-75 mx-auto p-4 mt-5 form">
+                <h1 class="login-header">Smart Login System</h1>
+                <div id="loginForm" class="p-4 inputsForm" autocomplete="off">
+                    <input id="loginEmail" class="form-control my-2" placeholder="Enter your email" type="email"
+                        required>
+                    <input id="loginPassword" class="form-control my-3" placeholder="Enter your password"
+                        type="password" required>
+                    <button type="submit" class="btn btn-outline-info w-100 my-2" id="loginBtn">Login</button>
+                </div>
+                <p class="text-white">Don't have an account? <span class="span-login"><a id="signupAnchor" class="text-white text-decoration-none">Sign Up</a></span></p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== Bootstrap JS link ========== -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ========== alert JS link ========== -->
+    <script src="js/sweetalert.min.js"></script>
+    <!-- ==========  JS external link ========== -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
