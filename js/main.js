@@ -9,7 +9,7 @@ if (localStorage.getItem("users") != null) {
     users = JSON.parse(localStorage.getItem("users"));
 }
 
-function signIn() {
+function handleSignIn() {
     let loginEmail = loginEmailInput.value;
     let loginPassword = loginPasswordInput.value;
 
@@ -20,7 +20,7 @@ function signIn() {
         return;
     }
 
-    if (isCorrectEmailAndPassword(loginEmail, loginPassword)) {
+    if (validateEmailAndPassword(loginEmail, loginPassword)) {
         window.location.href = "home.html";
     } else {
         swal({
@@ -29,7 +29,7 @@ function signIn() {
     }
 }
 
-function isCorrectEmailAndPassword(email, password) {
+function validateEmailAndPassword(email, password) {
     for (let i = 0; i < users.length; i++) {
         if (users[i].email === email && users[i].password === password) {
             localStorage.setItem("userName", users[i].name);
@@ -40,7 +40,7 @@ function isCorrectEmailAndPassword(email, password) {
 }
 
 loginBtn.addEventListener("click", function () {
-    signIn();
+    handleSignIn();
 });
 
 signupAnchor.addEventListener("click", function () {

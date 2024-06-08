@@ -37,7 +37,7 @@ function signUp() {
     clearForm();
     console.log(users);
     swal({
-      text: "Sign up successful",
+      text: "Successfully registered",
     });
   } else {
     swal({
@@ -51,7 +51,7 @@ signupBtn.addEventListener("click", function () {
 });
 
 function isValidEmail(email) {
-  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  let emailRegex = /^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+$/;
   return emailRegex.test(email);
 }
 
